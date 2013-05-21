@@ -23,6 +23,8 @@ module CapybaraWebkitBuilder
     case RbConfig::CONFIG['host_os']
     when /freebsd/
       "qmake-qt4"
+    when /arch/
+      "qmake-qt4"
     else
       "qmake"
     end
